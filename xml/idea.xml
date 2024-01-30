@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa>
+    <IVA></IVA>
+    <nombre></nombre>
+    <departamentos>
+        <departamento>
+            <nombre></nombre>
+            <servicios>
+                <servicio>
+                    <nombre></nombre>
+                    <imagen></imagen>
+                    <web></web>
+                    <precio></precio>
+                </servicio>
+            </servicios>
+        </departamento>
+        <departamento>
+            <nombre></nombre>
+            <productos>
+                <producto>
+                    <nombre></nombre>
+                    <imagen></imagen>
+                    <web></web>
+                    <precio></precio>
+                </producto>
+            </productos>
+        </departamento>
+    </departamentos>
+    <ubicacion>
+        <direccion></direccion>
+        <codigoPostal></codigoPostal>
+        <telefono></telefono>
+    </ubicacion>
+</empresa>
