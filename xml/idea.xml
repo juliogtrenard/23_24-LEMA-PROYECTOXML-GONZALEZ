@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <empresa>
     <IVA></IVA>
-    <nombre></nombre>
+    <informacion>
+        <nombre></nombre>
+        <web></web>
+        <ubicacion></ubicacion>
+        <horario dias="Lunes a viernes">
+            <apertura></apertura>
+            <cierre></cierre>
+        </horario>
+        <contacto>
+            <email tipo=""></email>
+            <telefono></telefono>
+        </contacto>
+    </informacion>
     <departamentos>
         <departamento>
             <nombre></nombre>
@@ -26,9 +38,4 @@
             </productos>
         </departamento>
     </departamentos>
-    <ubicacion>
-        <direccion></direccion>
-        <codigoPostal></codigoPostal>
-        <telefono></telefono>
-    </ubicacion>
 </empresa>
