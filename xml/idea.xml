@@ -2,8 +2,8 @@
 <empresa>
     <IVA></IVA>
     <informacion>
-        <nombre></nombre>
-        <web></web>
+        <nombre>CreativeWave Design Co.</nombre>
+        <web>www.CreativeWaveDesignCo.com</web>
         <ubicacion></ubicacion>
         <horario dias="Lunes a viernes">
             <apertura></apertura>
@@ -15,27 +15,83 @@
         </contacto>
     </informacion>
     <departamentos>
-        <departamento>
-            <nombre></nombre>
+        <departamento especialidad="tecnología">
             <servicios>
                 <servicio>
-                    <nombre></nombre>
+                    <nombre>Web corporativa</nombre>
+                    <imagen></imagen>
+                    <web></web>
+                    <precio></precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio>
+                    <nombre>Landing pages</nombre>
+                    <imagen></imagen>
+                    <web></web>
+                    <precio></precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio>
+                    <nombre>Ecommerce</nombre>
                     <imagen></imagen>
                     <web></web>
                     <precio></precio>
                 </servicio>
             </servicios>
         </departamento>
-        <departamento>
-            <nombre></nombre>
-            <productos>
-                <producto>
-                    <nombre></nombre>
+        <departamento especialidad="creatividad">
+            <servicios>
+                <servicio>
+                    <nombre>Diseño gráfico</nombre>
                     <imagen></imagen>
                     <web></web>
                     <precio></precio>
-                </producto>
-            </productos>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio>
+                    <nombre>Fotografía</nombre>
+                    <imagen></imagen>
+                    <web></web>
+                    <precio></precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio>
+                    <nombre>Vídeo</nombre>
+                    <imagen></imagen>
+                    <web></web>
+                    <precio></precio>
+                </servicio>
+            </servicios>
+        </departamento>
+        <departamento especialidad="publicidad">
+            <servicios>
+                <servicio>
+                    <nombre>Redes sociales</nombre>
+                    <imagen></imagen>
+                    <web></web>
+                    <precio></precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio>
+                    <nombre>Prensa</nombre>
+                    <imagen></imagen>
+                    <web></web>
+                    <precio></precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio>
+                    <nombre>Posicionamiento SEO</nombre>
+                    <imagen></imagen>
+                    <web></web>
+                    <precio></precio>
+                </servicio>
+            </servicios>
         </departamento>
     </departamentos>
 </empresa>
