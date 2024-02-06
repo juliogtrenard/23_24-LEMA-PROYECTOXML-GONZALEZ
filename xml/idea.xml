@@ -19,7 +19,7 @@
             <servicios>
                 <servicio>
                     <nombre>Web corporativa</nombre>
-                    <imagen></imagen>
+                    <imagen>corp_web.jpg</imagen>
                     <web></web>
                     <precio></precio>
                 </servicio>
@@ -27,7 +27,7 @@
             <servicios>
                 <servicio>
                     <nombre>Landing pages</nombre>
-                    <imagen></imagen>
+                    <imagen>landing_page.jpg</imagen>
                     <web></web>
                     <precio></precio>
                 </servicio>
@@ -35,7 +35,7 @@
             <servicios>
                 <servicio>
                     <nombre>Ecommerce</nombre>
-                    <imagen></imagen>
+                    <imagen>ecomerce.jpg</imagen>
                     <web></web>
                     <precio></precio>
                 </servicio>
@@ -45,7 +45,7 @@
             <servicios>
                 <servicio>
                     <nombre>Diseño gráfico</nombre>
-                    <imagen></imagen>
+                    <imagen>graphic_design.jpg</imagen>
                     <web></web>
                     <precio></precio>
                 </servicio>
