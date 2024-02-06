@@ -21,7 +21,7 @@
                     <nombre>Web corporativa</nombre>
                     <imagen>corp_web.jpg</imagen>
                     <web></web>
-                    <precio></precio>
+                    <precio>1000</precio>
                 </servicio>
             </servicios>
             <servicios>
@@ -29,7 +29,7 @@
                     <nombre>Landing pages</nombre>
                     <imagen>landing_page.jpg</imagen>
                     <web></web>
-                    <precio></precio>
+                    <precio>500</precio>
                 </servicio>
             </servicios>
             <servicios>
@@ -37,7 +37,7 @@
                     <nombre>Ecommerce</nombre>
                     <imagen>ecomerce.jpg</imagen>
                     <web></web>
-                    <precio></precio>
+                    <precio>1500</precio>
                 </servicio>
             </servicios>
         </departamento>
@@ -47,23 +47,23 @@
                     <nombre>Diseño gráfico</nombre>
                     <imagen>graphic_design.jpg</imagen>
                     <web></web>
-                    <precio></precio>
+                    <precio>300</precio>
                 </servicio>
             </servicios>
             <servicios>
                 <servicio>
                     <nombre>Fotografía</nombre>
-                    <imagen></imagen>
+                    <imagen>photography.jpg</imagen>
                     <web></web>
-                    <precio></precio>
+                    <precio>200</precio>
                 </servicio>
             </servicios>
             <servicios>
                 <servicio>
                     <nombre>Vídeo</nombre>
-                    <imagen></imagen>
+                    <imagen>video.jpg</imagen>
                     <web></web>
-                    <precio></precio>
+                    <precio>400</precio>
                 </servicio>
             </servicios>
         </departamento>
@@ -71,25 +71,25 @@
             <servicios>
                 <servicio>
                     <nombre>Redes sociales</nombre>
-                    <imagen></imagen>
+                    <imagen>social_media.jpg</imagen>
                     <web></web>
-                    <precio></precio>
+                    <precio>250</precio>
                 </servicio>
             </servicios>
             <servicios>
                 <servicio>
                     <nombre>Prensa</nombre>
-                    <imagen></imagen>
+                    <imagen>press.jpg</imagen>
                     <web></web>
-                    <precio></precio>
+                    <precio>300</precio>
                 </servicio>
             </servicios>
             <servicios>
                 <servicio>
                     <nombre>Posicionamiento SEO</nombre>
-                    <imagen></imagen>
+                    <imagen>seo.jpg</imagen>
                     <web></web>
-                    <precio></precio>
+                    <precio>600</precio>
                 </servicio>
             </servicios>
         </departamento>
