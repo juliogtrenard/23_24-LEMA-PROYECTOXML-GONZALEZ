@@ -30,7 +30,7 @@
 		<section id="main" >
 			<div class="inner">
 				<header>
-					<h1>Catálogo de Productos o servicios (tabla)</h1>
+					<h1>Catálogo de servicios</h1>
 				</header>
 				<div class="table-wrapper">
 					<table>
