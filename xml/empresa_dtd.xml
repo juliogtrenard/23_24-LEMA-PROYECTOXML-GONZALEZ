@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "../dtd/empresa.dtd">
+<empresa>
+    <IVA></IVA>
+    <informacion>
+        <nombre>CreativeWave Design Co.</nombre>
+        <web>www.CreativeWaveDesignCo.com</web>
+        <ubicacion>Araba Kalea, 39, 01006 Gasteiz, Araba</ubicacion>
+        <horario dias="Lunes a viernes">
+            <apertura>8:00</apertura>
+            <cierre>21:00</cierre>
+        </horario>
+        <contacto>
+            <email tipo="gmail"></email>
+            <telefono>612345678</telefono>
+        </contacto>
+    </informacion>
+    <departamentos>
+        <departamento especialidad="tecnología" codigo="D01" >
+            <servicios>
+                <servicio codigo="D01">
+                    <nombre>Web corporativa</nombre>
+                    <imagen>corp_web.jpg</imagen>
+                    <web>www.CreativeWaveDesignCo.com/tecnologia</web>
+                    <precio>1000</precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio codigo="D01">
+                    <nombre>Landing pages</nombre>
+                    <imagen>landing_page.jpg</imagen>
+                    <web>www.CreativeWaveDesignCo.com/tecnologia</web>
+                    <precio>500</precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio codigo="D01">
+                    <nombre>Ecommerce</nombre>
+                    <imagen>ecomerce.jpg</imagen>
+                    <web>www.CreativeWaveDesignCo.com/tecnologia</web>
+                    <precio>1500</precio>
+                </servicio>
+            </servicios>
+        </departamento>
+        <departamento especialidad="creatividad" codigo="D02">
+            <servicios>
+                <servicio codigo="D02">
+                    <nombre>Diseño gráfico</nombre>
+                    <imagen>graphic_design.jpg</imagen>
+                    <web>www.CreativeWaveDesignCo.com/creatividad</web>
+                    <precio>300</precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio codigo="D02">
+                    <nombre>Fotografía</nombre>
+                    <imagen>photography.jpg</imagen>
+                    <web>www.CreativeWaveDesignCo.com/creatividad</web>
+                    <precio>200</precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio codigo="D02">
+                    <nombre>Vídeo</nombre>
+                    <imagen>video.jpg</imagen>
+                    <web>www.CreativeWaveDesignCo.com/creatividad</web>
+                    <precio>400</precio>
+                </servicio>
+            </servicios>
+        </departamento>
+        <departamento especialidad="publicidad" codigo="D03">
+            <servicios>
+                <servicio codigo="D03">
+                    <nombre>Redes sociales</nombre>
+                    <imagen>social_media.jpg</imagen>
+                    <web>www.CreativeWaveDesignCo.com/publicidad</web>
+                    <precio>250</precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio codigo="D03">
+                    <nombre>Prensa</nombre>
+                    <imagen>press.jpg</imagen>
+                    <web>www.CreativeWaveDesignCo.com/publicidad</web>
+                    <precio>300</precio>
+                </servicio>
+            </servicios>
+            <servicios>
+                <servicio codigo="D03">
+                    <nombre>Posicionamiento SEO</nombre>
+                    <imagen>seo.jpg</imagen>
+                    <web>www.CreativeWaveDesignCo.com/publicidad</web>
+                    <precio>600</precio>
+                </servicio>
+            </servicios>
+        </departamento>
+    </departamentos>
+</empresa>

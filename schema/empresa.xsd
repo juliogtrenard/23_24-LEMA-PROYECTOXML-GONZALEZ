@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="IVA" />
+                <xs:element name="informacion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="web" type="xs:string" />
+                            <xs:element name="ubicacion" />
+                            <xs:element name="horario">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="apertura" />
+                                        <xs:element name="cierre" />
+                                    </xs:sequence>
+                                    <xs:attribute name="dias" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="contacto">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="email">
+                                            <xs:complexType>
+                                                <xs:attribute name="tipo" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="telefono" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="departamentos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="departamento" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="servicios" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="servicio">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nombre"
+                                                                    type="xs:string" />
+                                                                <xs:element name="imagen"
+                                                                    type="xs:string" />
+                                                                <xs:element name="web" />
+                                                                <xs:element name="precio"
+                                                                    type="xs:string" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="especialidad" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
