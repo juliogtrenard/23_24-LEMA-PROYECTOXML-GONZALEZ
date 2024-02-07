@@ -8,13 +8,13 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="nombre" type="xs:string" />
-                            <xs:element name="web" type="xs:string" />
-                            <xs:element name="ubicacion" />
+                            <xs:element name="web" type="tipoWeb" />
+                            <xs:element name="ubicacion" type="xs:string" />
                             <xs:element name="horario">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="apertura" />
-                                        <xs:element name="cierre" />
+                                        <xs:element name="apertura" type="xs:string" />
+                                        <xs:element name="cierre" type="xs:string" />
                                     </xs:sequence>
                                     <xs:attribute name="dias" use="required" />
                                 </xs:complexType>
@@ -22,12 +22,12 @@
                             <xs:element name="contacto">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="email">
+                                        <xs:element name="email" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:attribute name="tipo" use="required" />
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="telefono" />
+                                        <xs:element name="telefono" type="tipoTelefono" />
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
@@ -50,10 +50,13 @@
                                                                     type="xs:string" />
                                                                 <xs:element name="imagen"
                                                                     type="xs:string" />
-                                                                <xs:element name="web" />
-                                                                <xs:element name="precio"
+                                                                <xs:element name="web"
                                                                     type="xs:string" />
+                                                                <xs:element name="precio"
+                                                                    type="xs:decimal" />
                                                             </xs:sequence>
+                                                            <xs:attribute name="codigo"
+                                                            type="tipoCodigoServicio" use="required" />
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
@@ -61,6 +64,7 @@
                                         </xs:element>
                                     </xs:sequence>
                                     <xs:attribute name="especialidad" use="required" />
+                                    <xs:attribute name="codigo" type="tipoCodigoDepartamento" use="required" />
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -69,4 +73,30 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <xs:simpleType name="tipoCodigoServicio">
+        <xs:restriction base="xs:IDREF">
+            <xs:pattern value="[D][0-9][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoCodigoDepartamento">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="[D][0-9][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoTelefono">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{9}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="tipoWeb">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="www.[a-zA-Z]+.com"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+
 </xs:schema>
