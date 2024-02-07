@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:variable name="XMLDocument" select="document('../xml/almacen.xml')"/>
+    <xsl:variable name="XMLDocument" select="document('../xml/empresa.xml')"/>
     
     <xsl:template match="/">
     <html>
@@ -87,7 +87,7 @@
 		<footer id="footer">
 			<div class="inner">
 				<div class="copyright">
-					&copy; 202X Integrantes del grupo
+					© 202X Integrantes del grupo
 					<ul class="icons">
 						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
