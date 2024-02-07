@@ -30,27 +30,25 @@
 				<section id="main" >
 					<div class="inner">
 						<header>
-							<h1>Catálogo de Productos o servicios (divisiones)</h1>
+							<h1>Catálogo de servicios</h1>
 						</header>
-						<xsl:for-each select="//servicio">
-							<xsl:variable name="rutaImagen">
-								<xsl:value-of select="imagen"/>
-							</xsl:variable>							
-							<div class="box">
-								<a href="{concat('../imagenes/',$rutaImagen)}" class="image fit" target="_blank">
-									<img src="{concat('../imagenes/',$rutaImagen)}"/>
+						<div class="box">
+							<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D01']">
+								<xsl:variable name="rutaImagen" select="imagen"/>
+								<a href="{concat('../images/',$rutaImagen)}" class="image fit" target="_blank">
+									<img src="{concat('../images/',$rutaImagen)}" alt=""/>
 								</a>				
-								<h3><xsl:value-of select="//servicio/nombre"/></h3>
-								<strong>Descripción del producto 1:</strong>
+								<h3><xsl:value-of select="nombre"/></h3>
+								<strong>Descripción del producto:</strong>
 								<ul>
 									<li>Dolor pulvinar etiam magna etiam.</li>
 									<li>Sagittis adipiscing lorem eleifend.</li>
 									<li>Felis enim feugiat dolore viverra.</li>
 								</ul>
-								<span>Precio: 23.45</span>
+								<span>Precio: <xsl:value-of select="precio"/></span>
 								<a href="#" class="button fit">Más información</a>
-							</div>
-						</xsl:for-each>
+							</xsl:for-each>
+						</div>
 					</div>
 				</section>
 				
