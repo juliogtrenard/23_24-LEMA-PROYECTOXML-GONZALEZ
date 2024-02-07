@@ -32,9 +32,9 @@
 						<header>
 							<h1>Catálogo de servicios</h1>
 						</header>
-						<div class="box">
-							<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D01']">
-								<xsl:variable name="rutaImagen" select="imagen"/>
+						<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D01']">
+						<xsl:variable name="rutaImagen" select="imagen"/>
+							<div class="box">
 								<a href="{concat('../images/',$rutaImagen)}" class="image fit" target="_blank">
 									<img src="{concat('../images/',$rutaImagen)}" alt=""/>
 								</a>				
@@ -47,8 +47,8 @@
 								</ul>
 								<span>Precio: <xsl:value-of select="precio"/></span>
 								<a href="#" class="button fit">Más información</a>
-							</xsl:for-each>
-						</div>
+							</div>
+						</xsl:for-each>
 					</div>
 				</section>
 				
