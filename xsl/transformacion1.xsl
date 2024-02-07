@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:variable name="XMLDocument" select="document('../xml/empresa.xml')"/>
-    
-    <xsl:template match="/">
+<xsl:variable name="XMLDocument" select="document('../xml/empresa.xml')"/>
+<xsl:template match="/">
     <html>
     <head>
 		<title>UD6: Proyecto dirigido a la validación, formateo y transformación de documentos XML</title>
@@ -15,12 +14,13 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="inner">
-				<a href="../index.html" class="logo">Nombre de la web</a>
+				<a href="../index.html" class="logo">CreativeWave Design Co.</a>
 				<nav id="nav">
-					<a href="../index.html">Página Principal</a>
-					<a href="catalogo_1.html">Catálogo 1</a>
-					<a href="#">Catálogo 2</a>
-					<a href="contacto.html">Contacto</a>
+					<a href="../index.html">Inicio</a>
+					<a href="#">Tecnología</a>
+					<a href="/xml/plantilla2.xml">Creatividad</a>
+					<a href="/xml/plantilla3.xml">Publicidad</a>
+					<a href="../web/contacto.html">Contacto</a>								
 				</nav>
 			</div>
 		</header>
@@ -109,6 +109,5 @@
 
 	</body>
 </html>
-
-    </xsl:template>
-    </xsl:stylesheet>
+</xsl:template>
+</xsl:stylesheet>
