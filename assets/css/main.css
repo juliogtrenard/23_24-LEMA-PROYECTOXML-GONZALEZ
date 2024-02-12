@@ -4067,3 +4067,17 @@
     transition: 0.3s ease-in;
     cursor: pointer;
 }
+
+/* Responsive sección servicios */
+
+@media screen and (max-width: 1300px) {
+	.productos_contenedor {
+	  grid-template-columns: 1fr 1fr;
+	}
+  }
+  
+  @media screen and (max-width: 768px) {
+	.productos_contenedor {
+	  grid-template-columns: 1fr;
+	}
+  }
