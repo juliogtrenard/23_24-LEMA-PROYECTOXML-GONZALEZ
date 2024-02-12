@@ -32,6 +32,7 @@
 						<header>
 							<h1>Catálogo de servicios</h1>
 						</header>
+						
 						<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D01']">
 						<xsl:variable name="rutaImagen" select="imagen"/>
 							<div class="box">
