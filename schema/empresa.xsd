@@ -48,6 +48,8 @@
                                                             <xs:sequence>
                                                                 <xs:element name="nombre"
                                                                     type="xs:string" />
+                                                                    <xs:element name="descripcion"
+                                                                    type="xs:string" />
                                                                 <xs:element name="imagen"
                                                                     type="xs:string" />
                                                                 <xs:element name="web"

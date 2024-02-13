@@ -20,6 +20,7 @@
             <servicios>
                 <servicio codigo="D01">
                     <nombre>Web corporativa</nombre>
+                    <descripcion>Este servicio ofrece la creación de páginas web corporativas personalizadas que reflejan la identidad y los valores de tu empresa. Desde el diseño visual hasta la funcionalidad, nos enfocamos en proporcionar una experiencia de usuario excepcional. Nuestro equipo de expertos trabajará contigo para desarrollar una presencia en línea sólida y profesional que impulse tu marca y genere resultados tangibles.</descripcion>
                     <imagen>corp_web.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/tecnologia</web>
                     <precio>1000</precio>
@@ -28,6 +29,7 @@
             <servicios>
                 <servicio codigo="D01">
                     <nombre>Landing pages</nombre>
+                    <descripcion>Las landing pages son un componente crucial para cualquier estrategia de marketing digital. Con nuestro servicio de diseño de landing pages, creamos páginas optimizadas para convertir visitantes en clientes potenciales o ventas. Desde la estructura de la página hasta el contenido persuasivo, nos aseguramos de que cada elemento esté diseñado para maximizar la tasa de conversión y ayudar a alcanzar tus objetivos comerciales.</descripcion>
                     <imagen>landing_page.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/tecnologia</web>
                     <precio>500</precio>
@@ -36,6 +38,7 @@
             <servicios>
                 <servicio codigo="D01">
                     <nombre>Ecommerce</nombre>
+                    <descripcion>Si estás buscando expandir tu negocio en línea, nuestro servicio de desarrollo de ecommerce es la solución perfecta. Creamos tiendas en línea intuitivas y atractivas que facilitan la experiencia de compra para tus clientes. Desde la gestión de inventario hasta la integración de pasarelas de pago seguras, nos encargamos de todos los aspectos técnicos para que puedas centrarte en hacer crecer tu negocio.</descripcion>
                     <imagen>ecomerce.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/tecnologia</web>
                     <precio>1500</precio>
@@ -46,6 +49,7 @@
             <servicios>
                 <servicio codigo="D02">
                     <nombre>Diseño gráfico</nombre>
+                    <descripcion>Nuestro equipo de diseñadores gráficos talentosos trabaja en estrecha colaboración contigo para dar vida a tu visión creativa. Desde la creación de logotipos y branding hasta el diseño de materiales de marketing impresos y digitales, nos comprometemos a ofrecerte soluciones visuales impactantes que ayuden a diferenciar tu marca y atraer a tu audiencia objetivo.</descripcion>
                     <imagen>graphic_design.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/creatividad</web>
                     <precio>300</precio>
@@ -54,6 +58,7 @@
             <servicios>
                 <servicio codigo="D02">
                     <nombre>Fotografía</nombre>
+                    <descripcion>Capturamos momentos y creaciones con nuestra habilidad para la fotografía creativa. Ya sea para proyectos publicitarios, editoriales o de producto, nuestro equipo de fotógrafos se esfuerza por capturar imágenes que cuenten una historia y transmitan emociones. Desde sesiones en estudio hasta fotografía en locación, nos aseguramos de que cada imagen refleje la calidad y profesionalismo que tu marca merece.</descripcion>
                     <imagen>photography.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/creatividad</web>
                     <precio>200</precio>
@@ -62,6 +67,7 @@
             <servicios>
                 <servicio codigo="D02">
                     <nombre>Vídeo</nombre>
+                    <descripcion>Nuestro servicio de producción y edición de vídeo está diseñado para ayudarte a comunicar tu mensaje de manera efectiva y cautivadora. Desde vídeos promocionales hasta contenido para redes sociales, nuestro equipo se encarga de todo el proceso, desde la planificación y filmación hasta la edición y postproducción. Nos esforzamos por crear vídeos que resalten la singularidad de tu marca y conecten con tu audiencia.</descripcion>
                     <imagen>video.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/creatividad</web>
                     <precio>400</precio>
@@ -72,6 +78,7 @@
             <servicios>
                 <servicio codigo="D03">
                     <nombre>Redes sociales</nombre>
+                    <descripcion>Las redes sociales son una herramienta poderosa para conectar con tu audiencia y aumentar el reconocimiento de marca. Con nuestro servicio de gestión de redes sociales, creamos contenido relevante y atractivo que impulse la participación y fomente la interacción con tu comunidad en línea. Desde la planificación de contenido hasta la monitorización y análisis de resultados, nos encargamos de todas las aspectos de tu presencia en redes sociales para ayudarte a alcanzar tus objetivos de marketing.</descripcion>
                     <imagen>social_media.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/publicidad</web>
                     <precio>250</precio>
@@ -80,6 +87,7 @@
             <servicios>
                 <servicio codigo="D03">
                     <nombre>Prensa</nombre>
+                    <descripcion>Nuestro servicio de prensa te ayuda a generar cobertura mediática positiva y a aumentar la visibilidad de tu marca en los medios de comunicación. Desde la redacción de comunicados de prensa hasta el seguimiento con periodistas y medios relevantes, nos aseguramos de que tu mensaje llegue a la audiencia adecuada y se destaque en un mercado saturado de información.</descripcion>
                     <imagen>press.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/publicidad</web>
                     <precio>300</precio>
@@ -88,6 +96,7 @@
             <servicios>
                 <servicio codigo="D03">
                     <nombre>Posicionamiento SEO</nombre>
+                    <descripcion>El posicionamiento en buscadores es fundamental para aumentar la visibilidad y el tráfico orgánico a tu sitio web. Con nuestro servicio de posicionamiento SEO, optimizamos tu sitio para mejorar su ranking en los resultados de búsqueda y aumentar su relevancia para palabras clave específicas. Desde la investigación de palabras clave hasta la optimización de contenido y la construcción de enlaces, implementamos estrategias probadas que te ayudarán a alcanzar tus objetivos de SEO.</descripcion>
                     <imagen>seo.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/publicidad</web>
                     <precio>600</precio>

@@ -17,7 +17,8 @@
 <!ATTLIST departamento especialidad CDATA #REQUIRED>
 <!ATTLIST departamento codigo ID #REQUIRED>
 <!ELEMENT servicios (servicio)>
-<!ELEMENT servicio (nombre,imagen,web,precio)>
+<!ELEMENT servicio (nombre,descripcion,imagen,web,precio)>
 <!ATTLIST servicio codigo IDREF #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
 <!ELEMENT imagen (#PCDATA)>
 <!ELEMENT precio (#PCDATA)>
