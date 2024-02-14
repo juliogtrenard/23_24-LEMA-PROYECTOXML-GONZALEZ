@@ -20,7 +20,7 @@
             <servicios>
                 <servicio codigo="D01">
                     <nombre>Web corporativa</nombre>
-                    <descripcion>Este servicio ofrece la creación de páginas web corporativas personalizadas que reflejan la identidad y los valores de tu empresa. Desde el diseño visual hasta la funcionalidad, nos enfocamos en proporcionar una experiencia de usuario excepcional. Nuestro equipo de expertos trabajará contigo para desarrollar una presencia en línea sólida y profesional que impulse tu marca y genere resultados tangibles.</descripcion>
+                    <descripcion>Este servicio ofrece la creación de páginas web corporativas personalizadas que reflejan la identidad y los valores de tu empresa. Desde el diseño visual hasta la funcionalidad, nos enfocamos en proporcionar una experiencia de usuario excepcional.</descripcion>
                     <imagen>corp_web.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/tecnologia</web>
                     <precio>1000</precio>
@@ -29,7 +29,7 @@
             <servicios>
                 <servicio codigo="D01">
                     <nombre>Landing pages</nombre>
-                    <descripcion>Las landing pages son un componente crucial para cualquier estrategia de marketing digital. Con nuestro servicio de diseño de landing pages, creamos páginas optimizadas para convertir visitantes en clientes potenciales o ventas. Desde la estructura de la página hasta el contenido persuasivo, nos aseguramos de que cada elemento esté diseñado para maximizar la tasa de conversión y ayudar a alcanzar tus objetivos comerciales.</descripcion>
+                    <descripcion>Las landing pages son un componente crucial para cualquier estrategia de marketing digital. Con nuestro servicio de diseño de landing pages, creamos páginas optimizadas para convertir visitantes en clientes potenciales o ventas.</descripcion>
                     <imagen>landing_page.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/tecnologia</web>
                     <precio>500</precio>
@@ -38,7 +38,7 @@
             <servicios>
                 <servicio codigo="D01">
                     <nombre>Ecommerce</nombre>
-                    <descripcion>Si estás buscando expandir tu negocio en línea, nuestro servicio de desarrollo de ecommerce es la solución perfecta. Creamos tiendas en línea intuitivas y atractivas que facilitan la experiencia de compra para tus clientes. Desde la gestión de inventario hasta la integración de pasarelas de pago seguras, nos encargamos de todos los aspectos técnicos para que puedas centrarte en hacer crecer tu negocio.</descripcion>
+                    <descripcion>Si estás buscando expandir tu negocio en línea, nuestro servicio de desarrollo de ecommerce es la solución perfecta. Creamos tiendas en línea intuitivas y atractivas que facilitan la experiencia de compra para tus clientes.</descripcion>
                     <imagen>ecomerce.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/tecnologia</web>
                     <precio>1500</precio>
@@ -49,7 +49,7 @@
             <servicios>
                 <servicio codigo="D02">
                     <nombre>Diseño gráfico</nombre>
-                    <descripcion>Nuestro equipo de diseñadores gráficos talentosos trabaja en estrecha colaboración contigo para dar vida a tu visión creativa. Desde la creación de logotipos y branding hasta el diseño de materiales de marketing impresos y digitales, nos comprometemos a ofrecerte soluciones visuales impactantes que ayuden a diferenciar tu marca y atraer a tu audiencia objetivo.</descripcion>
+                    <descripcion>Nuestro equipo de diseñadores gráficos talentosos trabaja en estrecha colaboración contigo para dar vida a tu visión creativa.</descripcion>
                     <imagen>graphic_design.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/creatividad</web>
                     <precio>300</precio>
@@ -58,7 +58,7 @@
             <servicios>
                 <servicio codigo="D02">
                     <nombre>Fotografía</nombre>
-                    <descripcion>Capturamos momentos y creaciones con nuestra habilidad para la fotografía creativa. Ya sea para proyectos publicitarios, editoriales o de producto, nuestro equipo de fotógrafos se esfuerza por capturar imágenes que cuenten una historia y transmitan emociones. Desde sesiones en estudio hasta fotografía en locación, nos aseguramos de que cada imagen refleje la calidad y profesionalismo que tu marca merece.</descripcion>
+                    <descripcion>Capturamos momentos y creaciones con nuestra habilidad para la fotografía creativa.</descripcion>
                     <imagen>photography.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/creatividad</web>
                     <precio>200</precio>
@@ -67,7 +67,7 @@
             <servicios>
                 <servicio codigo="D02">
                     <nombre>Vídeo</nombre>
-                    <descripcion>Nuestro servicio de producción y edición de vídeo está diseñado para ayudarte a comunicar tu mensaje de manera efectiva y cautivadora. Desde vídeos promocionales hasta contenido para redes sociales, nuestro equipo se encarga de todo el proceso, desde la planificación y filmación hasta la edición y postproducción. Nos esforzamos por crear vídeos que resalten la singularidad de tu marca y conecten con tu audiencia.</descripcion>
+                    <descripcion>Nuestro servicio de producción y edición de vídeo está diseñado para ayudarte a comunicar tu mensaje de manera efectiva y cautivadora.</descripcion>
                     <imagen>video.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/creatividad</web>
                     <precio>400</precio>
