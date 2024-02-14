@@ -72,10 +72,13 @@
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <xsl:value-of select="(precio + $PVP) - $descuento"/>
                                                 </xsl:when>
+                                                <xsl:otherwise>
+													<xsl:value-of select="precio + $PVP"/>
+												</xsl:otherwise>
                                             </xsl:choose> <!-- Sumarle el iva calculado en la variable -->
                                         </td>
                                         <td>
-                                            <a href="#" target="_blank">
+                                            <a href="{web}" target="_blank">
                                                 Más información
                                             </a>
                                         </td>
@@ -121,10 +124,13 @@
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <xsl:value-of select="(precio + $PVP) - $descuento"/>
                                                 </xsl:when>
+                                                <xsl:otherwise>
+													<xsl:value-of select="precio + $PVP"/>
+												</xsl:otherwise>
                                             </xsl:choose> <!-- Sumarle el iva calculado en la variable -->
                                         </td>
                                         <td>
-                                            <a href="#" target="_blank">
+                                            <a href="{web}" target="_blank">
                                                 Más información
                                             </a>
                                         </td>
@@ -170,10 +176,13 @@
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <xsl:value-of select="(precio + $PVP) - $descuento"/>
                                                 </xsl:when>
+                                                <xsl:otherwise>
+													<xsl:value-of select="precio + $PVP"/>
+												</xsl:otherwise>
                                             </xsl:choose> <!-- Sumarle el iva calculado en la variable -->
                                         </td>
                                         <td>
-                                            <a href="#" target="_blank">
+                                            <a href="{web}" target="_blank">
                                                 Más información
                                             </a>
                                         </td>

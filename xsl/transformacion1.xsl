@@ -38,6 +38,7 @@
 						<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D01']">
 						<xsl:variable name="rutaImagen" select="imagen"/>
 						<xsl:variable name="PVP" select="precio * //IVA div 100"/>
+						<xsl:variable name="descuento" select="precio * 0.1"/>
 							<div class="box">
 								<a href="{concat('../images/',$rutaImagen)}" class="image fit" target="_blank">
 									<img src="{concat('../images/',$rutaImagen)}" alt=""/>
@@ -46,7 +47,14 @@
 								<strong>Descripción del producto:</strong>
 								<p><xsl:value-of select="descripcion"/></p>
 								<p>Precio: <xsl:value-of select="precio"/></p>
-								<p>Precio total: <xsl:value-of select="precio + $PVP"/><xsl:text>€</xsl:text></p>
+								<p>Precio total: <xsl:choose>
+                                                <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
+                                                    <xsl:value-of select="(precio + $PVP) - $descuento"/>
+                                                </xsl:when>
+												<xsl:otherwise>
+													<xsl:value-of select="precio + $PVP"/>
+												</xsl:otherwise>
+                                            </xsl:choose> <!-- Sumarle el iva calculado en la variable --></p>
 								<a href="{web}" class="button fit" target="_blank">Más información</a>
 							</div>
 						</xsl:for-each>

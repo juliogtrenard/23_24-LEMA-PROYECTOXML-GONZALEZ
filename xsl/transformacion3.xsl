@@ -54,7 +54,7 @@
 									<li><strong>50</strong> Dolor pulvinar etiam magna etiam.</li>
 									<li><strong>5,000</strong> Dolor pulvinar etiam magna etiam.</li>
 								</ul>
-								<a href="#" class="button fit">Más información</a>
+								<a href="{web}" class="button fit" target="_blank">Más información</a>
 							</div>
 						</xsl:for-each>
 					</div>
