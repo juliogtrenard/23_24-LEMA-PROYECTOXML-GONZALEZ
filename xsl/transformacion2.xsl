@@ -49,6 +49,7 @@
 								<tbody>
 									<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D02']">
 										<xsl:variable name="rutaImagen" select="imagen"/>
+										<xsl:variable name="PVP" select="precio * //IVA div 100"/>
 										
 										<tr>
 											<td>
@@ -63,8 +64,8 @@
 												</ul>
 												
 											</td>
-											<td><xsl:value-of select="precio"/></td>
-											<td></td>
+											<td><xsl:value-of select="precio"/><xsl:text>€</xsl:text></td>
+											<td><xsl:value-of select="precio + $PVP"/><xsl:text>€</xsl:text></td>
 										</tr>
 									</xsl:for-each>
 								</tbody>
