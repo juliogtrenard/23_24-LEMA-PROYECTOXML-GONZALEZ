@@ -48,6 +48,7 @@
 								<tbody>
 									<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D02']">
 										<xsl:variable name="rutaImagen" select="imagen"/>
+										
 										<tr>
 											<td>
 												<a href="{concat('../images/',$rutaImagen)}" class="image left" target="_blank">
