@@ -19,6 +19,7 @@
 						<a href="../index.html" class="logo">CreativeWave Design Co.</a>
 						<nav id="nav">
 							<a href="../index.html">Inicio</a>
+							<a href="/xml/plantilla4.xml">Servicios</a>
 							<a href="/xml/plantilla1.xml">Tecnología</a>
 							<a href="/xml/plantilla2.xml">Creatividad</a>
 							<a href="#">Publicidad</a>
@@ -38,13 +39,14 @@
 						</header>
 
 						<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D03']">
+							<xsl:variable name="PVP" select="precio * //IVA div 100"/>
 							<div class="box centrar-texto">
 								<h3>
 									<xsl:value-of select="nombre" />
 								</h3>
 								<p class="precio">
 									<sup>€</sup>
-									<xsl:value-of select="precio" />
+									<xsl:value-of select="precio + $PVP"/>
 								</p>
 								<ul class="lista">
 									<li><strong>1</strong> Dolor pulvinar etiam magna etiam.</li>

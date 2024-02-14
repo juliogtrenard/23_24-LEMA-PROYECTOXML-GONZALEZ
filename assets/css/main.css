@@ -3156,7 +3156,7 @@
 			position: absolute;
 			top: 0;
 			color: #e5474b;
-			font-size: 1.75em;
+			font-size: 1.3em;
 			text-transform: none;
 			font-weight: normal;
 			padding: 0;
@@ -4117,4 +4117,41 @@
 
 .lista li:not(:last-of-type) {
 	border-bottom: 1px solid red;
+}
+
+/* Transformacion 4 */
+
+#div1, #div2, #div3, #div4 {
+    margin-top: 80px;
+}
+
+.transf-4 caption {
+    font-size: 1.6rem;
+	color: red;
+	font-weight: bold;
+    padding: 0 0 20px 0;
+}
+
+.transf-4 td a {
+    color: red;
+    text-decoration: none;
+}
+
+.transf-4 td a:hover {
+    color: rgb(255, 112, 112);
+    transition: 0.2s;
+}
+
+.transf-4 span {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.transf-4 img {
+	width: 300px;
+	height: 300px;
+}
+
+.total-productos {
+	text-align: center;
 }

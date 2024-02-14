@@ -17,6 +17,7 @@
 						<a href="../index.html" class="logo">CreativeWave Design Co.</a>
 						<nav id="nav">
 							<a href="../index.html">Inicio</a>
+							<a href="/xml/plantilla4.xml">Servicios</a>
 							<a href="/xml/plantilla1.xml">Tecnología</a>
 							<a href="#">Creatividad</a>
 							<a href="/xml/plantilla3.xml">Publicidad</a>
