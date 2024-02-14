@@ -44,6 +44,7 @@
 										<th>Descripción</th>
 										<th>Precio</th>
 										<th>Precio total</th>
+										<th>Página web</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -66,6 +67,7 @@
 											</td>
 											<td><xsl:value-of select="precio"/><xsl:text>€</xsl:text></td>
 											<td><xsl:value-of select="precio + $PVP"/><xsl:text>€</xsl:text></td>
+											<td><a href="{web}" class="button fit" target="_blank">Más información</a></td>
 										</tr>
 									</xsl:for-each>
 								</tbody>
