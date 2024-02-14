@@ -20,7 +20,7 @@
             <servicios>
                 <servicio codigo="D01">
                     <nombre>Web corporativa</nombre>
-                    <descripcion>Este servicio ofrece la creación de páginas web corporativas personalizadas que reflejan la identidad y los valores de tu empresa. Desde el diseño visual hasta la funcionalidad, nos enfocamos en proporcionar una experiencia de usuario excepcional.</descripcion>
+                    <descripcion>Desde el diseño visual hasta la funcionalidad, proporcionamos una experiencia de usuario excepcional.</descripcion>
                     <imagen>corp_web.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/tecnologia</web>
                     <precio>1000</precio>
@@ -29,7 +29,7 @@
             <servicios>
                 <servicio codigo="D01">
                     <nombre>Landing pages</nombre>
-                    <descripcion>Las landing pages son un componente crucial para cualquier estrategia de marketing digital. Con nuestro servicio de diseño de landing pages, creamos páginas optimizadas para convertir visitantes en clientes potenciales o ventas.</descripcion>
+                    <descripcion>Las landing pages son un componente crucial para cualquier estrategia de marketing digital.</descripcion>
                     <imagen>landing_page.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/tecnologia</web>
                     <precio>500</precio>
@@ -38,7 +38,7 @@
             <servicios>
                 <servicio codigo="D01">
                     <nombre>Ecommerce</nombre>
-                    <descripcion>Si estás buscando expandir tu negocio en línea, nuestro servicio de desarrollo de ecommerce es la solución perfecta. Creamos tiendas en línea intuitivas y atractivas que facilitan la experiencia de compra para tus clientes.</descripcion>
+                    <descripcion>Si estás buscando expandir tu negocio en línea, nuestro servicio de desarrollo de ecommerce es la solución perfecta.</descripcion>
                     <imagen>ecomerce.jpg</imagen>
                     <web>www.CreativeWaveDesignCo.com/tecnologia</web>
                     <precio>1500</precio>
