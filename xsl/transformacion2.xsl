@@ -43,6 +43,7 @@
 										<th>Nombre</th>
 										<th>Descripción</th>
 										<th>Precio</th>
+										<th>Precio total</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -62,6 +63,7 @@
 												
 											</td>
 											<td><xsl:value-of select="precio"/></td>
+											<td></td>
 										</tr>
 									</xsl:for-each>
 								</tbody>
