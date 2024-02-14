@@ -41,11 +41,9 @@
 								</a>				
 								<h3><xsl:value-of select="nombre"/></h3>
 								<strong>Descripción del producto:</strong>
-								<ul>
-									<li>Dolor pulvinar etiam magna etiam.</li>
-									<li>Sagittis adipiscing lorem eleifend.</li>
-									<li>Felis enim feugiat dolore viverra.</li>
-								</ul>
+								<p>
+									<xsl:value-of select="descripcion"/>
+								</p>
 								<span>Precio: <xsl:value-of select="precio"/></span>
 								<a href="#" class="button fit">Más información</a>
 							</div>
