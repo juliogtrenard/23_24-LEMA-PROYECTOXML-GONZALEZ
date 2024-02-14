@@ -43,13 +43,10 @@
 								</a>				
 								<h3><xsl:value-of select="nombre"/></h3>
 								<strong>Descripción del producto:</strong>
-								<p>
-									<xsl:value-of select="descripcion"/>
-								</p>
+								<p><xsl:value-of select="descripcion"/></p>
 								<p>Precio: <xsl:value-of select="precio"/></p>
 								<p>Precio total: <xsl:value-of select="precio + $PVP"/><xsl:text>€</xsl:text></p>
-								
-								<a href="#" class="button fit">Más información</a>
+								<a href="{web}" class="button fit" target="_blank">Más información</a>
 							</div>
 						</xsl:for-each>
 					</div>
