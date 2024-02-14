@@ -1,5 +1,5 @@
 <!ELEMENT empresa (IVA,informacion,departamentos)>
-<!ELEMENT IVA EMPTY>
+<!ELEMENT IVA (#PCDATA)>
 <!ELEMENT informacion (nombre,web,ubicacion,horario,contacto)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT web (#PCDATA)>

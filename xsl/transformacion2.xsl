@@ -45,11 +45,13 @@
 										<th>Descripción</th>
 										<th>Precio</th>
 										<th>Precio total</th>
+										<th>Página web</th>
 									</tr>
 								</thead>
 								<tbody>
 									<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D02']">
 										<xsl:variable name="rutaImagen" select="imagen"/>
+										<xsl:variable name="PVP" select="precio * //IVA div 100"/>
 										
 										<tr>
 											<td>
@@ -64,8 +66,9 @@
 												</ul>
 												
 											</td>
-											<td><xsl:value-of select="precio"/></td>
-											<td></td>
+											<td><xsl:value-of select="precio"/><xsl:text>€</xsl:text></td>
+											<td><xsl:value-of select="precio + $PVP"/><xsl:text>€</xsl:text></td>
+											<td><a href="{web}" class="button fit" target="_blank">Más información</a></td>
 										</tr>
 									</xsl:for-each>
 								</tbody>
