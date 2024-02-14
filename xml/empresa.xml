@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:noNamespaceSchemaLocation="../schema/empresa.xsd">
-    <IVA></IVA>
+    <IVA>21</IVA>
     <informacion>
         <nombre>CreativeWave Design Co.</nombre>
         <web>www.CreativeWaveDesignCo.com</web>

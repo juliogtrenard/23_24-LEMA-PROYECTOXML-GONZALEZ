@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<xsl:variable name="XMLDocument" select="document('../xml/empresa.xml')"/>
 	<xsl:template match="/">
+	
 		<html>
 			<head>
 				<title>UD6: Proyecto dirigido a la validación, formateo y transformación de documentos XML</title>
@@ -35,6 +36,7 @@
 						
 						<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D01']">
 						<xsl:variable name="rutaImagen" select="imagen"/>
+						<xsl:variable name="PVP" select="precio * //IVA div 100"/>
 							<div class="box">
 								<a href="{concat('../images/',$rutaImagen)}" class="image fit" target="_blank">
 									<img src="{concat('../images/',$rutaImagen)}" alt=""/>
@@ -44,7 +46,9 @@
 								<p>
 									<xsl:value-of select="descripcion"/>
 								</p>
-								<span>Precio: <xsl:value-of select="precio"/></span>
+								<p>Precio: <xsl:value-of select="precio"/></p>
+								<p>Precio total: <xsl:value-of select="precio + $PVP"/><xsl:text>€</xsl:text></p>
+								
 								<a href="#" class="button fit">Más información</a>
 							</div>
 						</xsl:for-each>
