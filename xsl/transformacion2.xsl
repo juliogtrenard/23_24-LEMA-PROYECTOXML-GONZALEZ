@@ -57,9 +57,7 @@
 											<td><xsl:value-of select="nombre"/></td>
 											<td>Descripción del producto:
 												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
+													<p><xsl:value-of select="descripcion"/></p>
 												</ul>
 												
 											</td>
