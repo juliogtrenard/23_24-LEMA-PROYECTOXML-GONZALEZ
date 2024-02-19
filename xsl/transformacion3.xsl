@@ -49,10 +49,10 @@
 									<xsl:value-of select="precio + $PVP"/>
 								</p>
 								<ul class="lista">
-									<li><strong>1</strong> Dolor pulvinar etiam magna etiam.</li>
-									<li><strong>5</strong> Dolor pulvinar etiam magna etiam.</li>
-									<li><strong>50</strong> Dolor pulvinar etiam magna etiam.</li>
-									<li><strong>5,000</strong> Dolor pulvinar etiam magna etiam.</li>
+									<li>Número <strong>1</strong> en la lista de los más visitados de su categoría</li>
+									<li><strong>50</strong> Medios de comunicación se hicieron eco de la noticia </li>
+									<li><strong>5,000</strong> Menciones y reacciones en TikTok en un solo día</li>
+									<li><strong>15,000</strong> Espectadores simultáneos en el evento de Instagram</li>
 								</ul>
 								<a href="{web}" class="button fit" target="_blank">Más información</a>
 							</div>
