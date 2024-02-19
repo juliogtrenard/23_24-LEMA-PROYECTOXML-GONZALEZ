@@ -36,6 +36,7 @@
 						</header>
 						
 						<div id="div1">
+                            <!-- Creación de la tabla y fila de títulos -->
                             <table class="transf-4">
                                 <caption>TECNOLOGÍA</caption>
                                 <tr>
@@ -45,6 +46,7 @@
                                     <th>PVP</th>
                                     <th>Página web</th>
                                 </tr>
+                                <!-- Bucle y definición de variables para los servicios con código D01 -->
                                 <xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D01']">
                                     <xsl:sort select="precio"/>
                                     <xsl:variable name="PVP" select="precio * //IVA div 100"/>
@@ -52,6 +54,7 @@
                                     <xsl:variable name="rutaImagen" select="imagen"/>
                                     <tr>
                                         <td>
+                                            <!-- Uso de la variable $rutaImagen para coger cada ruta del xml -->
                                             <a href="{concat('../images/',$rutaImagen)}" class="image fit" target="_blank">
                                                 <img src="{concat('../images/',$rutaImagen)}" alt=""/>
                                             </a>	
@@ -59,6 +62,7 @@
                                         <td>
                                             <xsl:value-of select="nombre"/>
                                             <xsl:choose>
+                                                <!-- Condicional usada en el precio para añadir el texto "OFERTA" usando la variable $PVP -->
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <span> OFERTA.</span>
                                                 </xsl:when>
@@ -68,6 +72,7 @@
                                             <xsl:value-of select="precio"/>                                    
                                         </td>
                                         <td>
+                                            <!-- Condicional usada en el precio para añadir descuentos usando la variable $PVP -->
                                             <xsl:choose>
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <xsl:value-of select="(precio + $PVP) - $descuento"/>
@@ -88,6 +93,7 @@
                         </div>
         
                         <div id="div2">
+                         <!-- Creación de la tabla y fila de títulos -->
                             <table class="transf-4">
                                 <caption>CREATIVIDAD</caption>
                                 <tr>
@@ -97,6 +103,7 @@
                                     <th>PVP</th>
                                     <th>Página web</th>
                                 </tr>
+                                 <!-- Bucle y definición de variables para los servicios con código D02 -->
                                 <xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D02']">
                                     <xsl:sort select="precio"/>
                                     <xsl:variable name="PVP" select="precio * //IVA div 100"/>
@@ -104,12 +111,14 @@
                                     <xsl:variable name="rutaImagen" select="imagen"/>
                                     <tr>
                                         <td>
+                                            <!-- Uso de la variable $rutaImagen para coger cada ruta del xml -->
                                             <a href="{concat('../images/',$rutaImagen)}" class="image fit" target="_blank">
                                                 <img src="{concat('../images/',$rutaImagen)}" alt=""/>
                                             </a>	
                                         </td>
                                         <td>
                                             <xsl:value-of select="nombre"/>
+                                            <!-- Condicional usada en el precio para añadir descuentos usando la variable $PVP -->
                                             <xsl:choose>
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <span> OFERTA.</span>
@@ -121,6 +130,7 @@
                                         </td>
                                         <td>
                                             <xsl:choose>
+                                                <!-- Condicional usada en el precio para añadir descuentos usando la variable $PVP -->
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <xsl:value-of select="(precio + $PVP) - $descuento"/>
                                                 </xsl:when>
@@ -140,6 +150,7 @@
                         </div>
         
                         <div id="div3">
+                            <!-- Creación de la tabla y fila de títulos -->
                             <table class="transf-4">
                                 <caption>PUBLICIDAD</caption>
                                 <tr>
@@ -149,6 +160,7 @@
                                     <th>PVP</th>
                                     <th>Página web</th>
                                 </tr>
+                                <!-- Bucle y definición de variables para los servicios con código D03 -->
                                 <xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D03']">
                                     <xsl:sort select="precio"/>
                                     <xsl:variable name="PVP" select="precio * //IVA div 100"/>
@@ -156,6 +168,7 @@
                                     <xsl:variable name="rutaImagen" select="imagen"/>
                                     <tr>
                                         <td>
+                                            <!-- Uso de la variable $rutaImagen para coger cada ruta del xml -->
                                             <a href="{concat('../images/',$rutaImagen)}" class="image fit" target="_blank">
                                                 <img src="{concat('../images/',$rutaImagen)}" alt=""/>
                                             </a>	
@@ -163,6 +176,7 @@
                                         <td>
                                             <xsl:value-of select="nombre"/>
                                             <xsl:choose>
+                                                <!-- Condicional usada en el precio para añadir el texto "OFERTA" usando la variable $PVP -->
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <span> OFERTA.</span>
                                                 </xsl:when>
@@ -172,6 +186,7 @@
                                             <xsl:value-of select="precio"/>
                                         </td>
                                         <td>
+                                            <!-- Condicional usada en el precio para añadir descuentos usando la variable $PVP -->
                                             <xsl:choose>
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <xsl:value-of select="(precio + $PVP) - $descuento"/>

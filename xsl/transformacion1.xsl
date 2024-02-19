@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<xsl:variable name="XMLDocument" select="document('../xml/empresa.xml')"/>
-	<xsl:template match="/">
-	
+	<xsl:template match="/">	
 		<html>
 			<head>
 				<title>UD6: Proyecto dirigido a la validación, formateo y transformación de documentos XML</title>
@@ -27,19 +26,21 @@
 					</div>
 				</header>
 				<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				
+
 				<!-- Main -->
 				<section id="main" >
 					<div class="inner">
 						<header>
 							<h1>Catálogo de servicios</h1>
 						</header>
-						
+						<!-- Bucle y definición de variables para los servicios con código D01 -->
 						<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D01']">
 						<xsl:variable name="rutaImagen" select="imagen"/>
 						<xsl:variable name="PVP" select="precio * //IVA div 100"/>
 						<xsl:variable name="descuento" select="precio * 0.1"/>
+							<!-- Div para cada producto  -->
 							<div class="box">
+								<!-- Uso de la variable $rutaImagen para coger cada ruta del xml -->
 								<a href="{concat('../images/',$rutaImagen)}" class="image fit" target="_blank">
 									<img src="{concat('../images/',$rutaImagen)}" alt=""/>
 								</a>				
@@ -47,6 +48,7 @@
 								<strong>Descripción del producto:</strong>
 								<p><xsl:value-of select="descripcion"/></p>
 								<p>Precio: <xsl:value-of select="precio"/></p>
+								<!-- Condicional usada en el precio para añadir descuentos usando la variable $PVP -->
 								<p>Precio total: <xsl:choose>
                                                 <xsl:when test="precio + $PVP &gt; 1000"> <!-- Si el precio es mayor a 200 está en oferta -->                    
                                                     <xsl:value-of select="(precio + $PVP) - $descuento"/>
@@ -59,8 +61,8 @@
 							</div>
 						</xsl:for-each>
 					</div>
-				</section>
-				
+				</section>		
+
 				<!-- Footer -->
 				<footer id="footer">
 					<div class="inner">

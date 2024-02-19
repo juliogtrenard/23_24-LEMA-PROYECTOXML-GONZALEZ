@@ -32,10 +32,8 @@
 					<div class="inner">
 						<header>
 							<h1>Catálogo de servicios</h1>
-						</header>
-						
-						
-						
+						</header>						
+						<!-- Creación de la tabla y fila de títulos -->
 						<div class="table-wrapper">
 							<table>
 								<thead>
@@ -49,22 +47,20 @@
 									</tr>
 								</thead>
 								<tbody>
+									<!-- Bucle y definición de variables para los servicios con código D02 -->
 									<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D02']">
 										<xsl:variable name="rutaImagen" select="imagen"/>
-										<xsl:variable name="PVP" select="precio * //IVA div 100"/>
-										
+										<xsl:variable name="PVP" select="precio * //IVA div 100"/>										
 										<tr>
 											<td>
+												<!-- Uso de la variable $rutaImagen para coger cada ruta del xml -->
 												<a href="{concat('../images/',$rutaImagen)}" class="image left" target="_blank">
 													<img src="{concat('../images/',$rutaImagen)}" alt=""/>
 												</a>
 											</td>
 											<td><xsl:value-of select="nombre"/></td>
 											<td>Descripción del producto:
-												<ul>
-													<p><xsl:value-of select="descripcion"/></p>
-												</ul>
-												
+												<ul><p><xsl:value-of select="descripcion"/></p></ul>												
 											</td>
 											<td><xsl:value-of select="precio"/><xsl:text>€</xsl:text></td>
 											<td><xsl:value-of select="precio + $PVP"/><xsl:text>€</xsl:text></td>

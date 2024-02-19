@@ -37,9 +37,10 @@
 						<header>
 							<h1>Catálogo de servicios</h1>
 						</header>
-
+						<!-- Bucle y definición de variables para los servicios con código D03 -->
 						<xsl:for-each select="$XMLDocument/empresa//servicio[@codigo='D03']">
 							<xsl:variable name="PVP" select="precio * //IVA div 100"/>
+							<!-- Div para cada producto  -->
 							<div class="box centrar-texto">
 								<h3>
 									<xsl:value-of select="nombre" />
