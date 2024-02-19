@@ -16,15 +16,15 @@
                                         <xs:element name="apertura" type="xs:string" />
                                         <xs:element name="cierre" type="xs:string" />
                                     </xs:sequence>
-                                    <xs:attribute name="dias" use="required" />
+                                    <xs:attribute name="dias" use="required" /> <!-- Atributo dias obligatorio -->
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="contacto">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="email" minOccurs="0">
+                                        <xs:element name="email" minOccurs="0"> <!-- Ocurrencia opcional -->
                                             <xs:complexType>
-                                                <xs:attribute name="tipo" use="required" />
+                                                <xs:attribute name="tipo" use="required" /> <!-- Atributo tipo obligatorio -->
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element name="telefono" type="tipoTelefono" />
@@ -58,13 +58,14 @@
                                                                     type="xs:decimal" />
                                                             </xs:sequence>
                                                             <xs:attribute name="codigo"
-                                                            type="tipoCodigoServicio" use="required" />
+                                                            type="tipoCodigoServicio" use="required" /> <!-- Atributo codigo obligatorio -->
                                                         </xs:complexType>
                                                     </xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
+                                    <!-- Atributos especialidad y codigo obligatorios -->
                                     <xs:attribute name="especialidad" use="required" />
                                     <xs:attribute name="codigo" type="tipoCodigoDepartamento" use="required" />
                                 </xs:complexType>
@@ -76,24 +77,28 @@
         </xs:complexType>
     </xs:element>
 
+    <!-- ID de referencia para el codigo del servicio -->
     <xs:simpleType name="tipoCodigoServicio">
         <xs:restriction base="xs:IDREF">
             <xs:pattern value="[D][0-9][0-9]" />
         </xs:restriction>
     </xs:simpleType>
 
+    <!-- ID del codigo de cada departamento -->
     <xs:simpleType name="tipoCodigoDepartamento">
         <xs:restriction base="xs:ID">
             <xs:pattern value="[D][0-9][0-9]" />
         </xs:restriction>
     </xs:simpleType>
 
+    <!-- Restriccion del patron del telefono -->
     <xs:simpleType name="tipoTelefono">
         <xs:restriction base="xs:string">
             <xs:pattern value="[0-9]{9}"></xs:pattern>
         </xs:restriction>
     </xs:simpleType>
     
+    <!-- Restriccion del patron de la web -->
     <xs:simpleType name="tipoWeb">
         <xs:restriction base="xs:string">
             <xs:pattern value="www.[a-zA-Z]+.com"></xs:pattern>

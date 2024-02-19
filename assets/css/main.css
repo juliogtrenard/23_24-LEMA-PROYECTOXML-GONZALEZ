@@ -3975,7 +3975,7 @@
 		}
 
 /* Servicios */
-.productos {
+.servicios {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3983,20 +3983,22 @@
     height: 100%;
   }
   
-.productos p {
-    color: black;
+.servicios p {
+    color: #e5474b;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+	font-weight: 500;
 }
-  
-.productos_contenedor {
+
+/* Posicionamiento de los servicios */
+.servicios_contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 	margin-bottom: 3rem;
 }
   
-.productos_carta {
+.servicios_carta {
     margin: 10px;
     height: 425px;
     width: 300px;
@@ -4009,11 +4011,11 @@
     transition: 0.3s ease-in;
 }
 
-.productos_carta h2 {
+.servicios_carta h2 {
 	color: white;
 }
 
-.productos_carta p {
+.servicios_carta p {
     color: white;
     font-size: 1.2rem;
     text-align: center;
@@ -4021,36 +4023,37 @@
     font-style: italic;
 }
 
-.productos_carta:nth-child(1) {
+/* Gradient de cada carta de productos */
+.servicios_carta:nth-child(1) {
     background: #23074d;
     background: -webkit-linear-gradient(to top, #cc5333, #23074d);
     background: linear-gradient(to top, #cc5333, #23074d);
 }
 
-.productos_carta:nth-child(2) {
+.servicios_carta:nth-child(2) {
     background: #b92b27;
     background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
     background: linear-gradient(to right, #1565C0, #b92b27);
 }
 
-.productos_carta:nth-child(3) {
+.servicios_carta:nth-child(3) {
     background: #23074d;
     background: -webkit-linear-gradient(to bottom, #cc5333, #23074d);
     background: linear-gradient(to bottom, #cc5333, #23074d);
 }
   
-.productos_carta h2 {
+.servicios_carta h2 {
     text-align: center;
     font-weight: bold;
 }
   
-.productos_boton {
+.servicios_boton {
     display: flex;
     justify-content: center;
     margin-top: 16px;
 }
 
-.productos_boton a {
+.servicios_boton a {
     display: inline;
     border: 0;
     border-radius: 4px;
@@ -4061,8 +4064,9 @@
     text-decoration: none;
     color: white;
 }
-  
-.productos_carta:hover {
+
+/* Zoom al mover el raton por cada carta */
+.servicios_carta:hover {
     transform: scale(1.075);
     transition: 0.3s ease-in;
     cursor: pointer;
@@ -4071,13 +4075,13 @@
 /* Responsive sección servicios */
 
 @media screen and (max-width: 1300px) {
-	.productos_contenedor {
+	.servicios_contenedor {
 	  grid-template-columns: 1fr 1fr;
 	}
   }
   
   @media screen and (max-width: 768px) {
-	.productos_contenedor {
+	.servicios_contenedor {
 	  grid-template-columns: 1fr;
 	}
   }
@@ -4119,7 +4123,7 @@
 	border-bottom: 1px solid red;
 }
 
-/* Transformacion 4 */
+/* Transformacion 4 - Seccion servicios */
 
 #div1, #div2, #div3, #div4 {
     margin-top: 80px;
@@ -4142,11 +4146,13 @@
     transition: 0.2s;
 }
 
+/* color y tamaño de fuente del span en caso de que ocurra una oferta */
 .transf-4 span {
     color: red;
     font-size: 1.2rem;
 }
 
+/* Tamaño de las imagenenes en la seccion servicios */
 .transf-4 img {
 	width: 300px;
 	height: 300px;
