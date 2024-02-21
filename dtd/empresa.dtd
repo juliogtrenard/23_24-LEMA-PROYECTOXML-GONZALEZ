@@ -1,0 +1,24 @@
+<!ELEMENT empresa (IVA,informacion,departamentos)>
+<!ELEMENT IVA (#PCDATA)>
+<!ELEMENT informacion (nombre,web,ubicacion,horario,contacto)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>
+<!ELEMENT horario (apertura,cierre)>
+<!ATTLIST horario dias CDATA #REQUIRED>
+<!ELEMENT apertura (#PCDATA)>
+<!ELEMENT cierre (#PCDATA)>
+<!ELEMENT contacto (email?,telefono*)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email tipo (gmail|hotmail) #IMPLIED>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT departamentos (departamento+)>
+<!ELEMENT departamento (servicios+)>
+<!ATTLIST departamento especialidad CDATA #REQUIRED>
+<!ATTLIST departamento codigo ID #REQUIRED>
+<!ELEMENT servicios (servicio)>
+<!ELEMENT servicio (nombre,descripcion,imagen,web,precio)>
+<!ATTLIST servicio codigo IDREF #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
